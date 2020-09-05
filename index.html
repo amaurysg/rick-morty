@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick And Morty !</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  body {
+    font-family: 'Cabin Sketch', cursive;
+    background: url("images/255-2558034_rick-and-morty-hd-iphone-xs-10-x\ \(1\).jpg");
+    background-attachment: fixed;
+    background-size: contain;
+
+  }
+
+  header {
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .wrapper {
+    padding: 0px 30px 0 30px;
+  }
+
+
+  .logo img {
+
+    height: 100%;
+    width: 80%;
+    border-radius: 25px;
+  }
+
+  .character-image-container {
+
+    text-align: center;
+    border-radius: 25px;
+
+
+
+  }
+
+  .character-image-container img {
+    border-radius: 25px;
+    width: 200px;
+  }
+
+
+
+  .container-description {
+    text-align: center;
+    color: #16acc9;
+    margin-bottom: 30px;
+  }
+
+  .character-name-container h2 {
+    font-size: 40px;
+    margin: 10px 0;
+
+  }
+
+  .subtitle {
+    color: red;
+  }
+
+  .container-species,
+  .container-status,
+  .container-origin,
+  .container-episodes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container-species,
+  .container-status,
+  .container-origin,
+  .container-episodes h2 {
+    align-self: center;
+  }
+
+  .character-origin-container {
+    font-size: 16px;
+  }
+
+  .arrow {
+    padding: 10px 25px;
+    background-color: green;
+    color: white;
+    border: 3px dashed green;
+    font-family: 'Cabin Sketch', cursive;
+    border-radius: 25px;
+    outline: none;
+    opacity: .5;
+
+
+  }
+
+  .arrow:hover {
+    opacity: .8;
+  }
+</style>
+
+<body>
+  <header>
+    <figure class="logo">
+      <img src="./images/rick-morty-logo.png" alt="">
+    </figure>
+  </header>
+  <div class="wrapper">
+
+    <div id="character-image-container" class="character-image-container">
+      image
+    </div>
+
+    <div class="container-description">
+
+      <div id="character-name-container" class="character-name-container">
+        Name
+      </div>
+
+      <div class="container-species">
+
+        <h2 class="subtitle">Species:</h2>
+        <h2 id="character-species-container" class="character-species-container">
+          Species
+        </h2>
+      </div>
+
+      <div class="container-status">
+        <h2 class="subtitle">Status:</h2>
+        <h2 id="character-status-container" class="character-status-container">
+          Estado
+        </h2>
+      </div>
+      <div class="container-episodes">
+        <h2 class="subtitle">Episodes:</h2>
+        <h2 id="character-episodes-container" class="character-episodes-container">
+          EpisodesHTML
+        </h2>
+      </div>
+      <div class="container-origin">
+        <h2 class="subtitle">Origin:</h2>
+        <h2 id="character-origin-container" class="character-origin-container">
+          OriginHTML
+        </h2>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="arrows-container" style="color:blue; display:flex; justify-content:space-around">
+    <button class="arrow" id="load-prev"> PREV</button>
+    <button class="arrow" id="load-next">NEXT</button>
+  </div>
+
+  <script src="./js/api.js"></script>
+</body>
+
+</html>
